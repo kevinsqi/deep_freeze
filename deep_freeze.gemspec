@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["iqnivek@gmail.com"]
   gem.description   = %q{Provide a deep_freeze method for most objects}
   gem.summary       = %q{Simple deep freezing}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/iqnivek/deep_freeze"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
