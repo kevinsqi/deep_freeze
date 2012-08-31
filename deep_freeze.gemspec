@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = DeepFreeze::VERSION
   gem.authors       = ["Kevin Qi"]
   gem.email         = ["iqnivek@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Provide a deep_freeze method for most objects}
+  gem.summary       = %q{Simple deep freezing}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
