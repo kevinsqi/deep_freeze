@@ -1,6 +1,18 @@
 # DeepFreeze
 
-TODO: Write a gem description
+Adds .deep_freeze method to Objects that aren't Classes and Modules.
+
+    irb> hsh = {:a => {:b => :c}}.freeze
+     => {:a=>{:b=>:c}} 
+    irb> hsh[:a][:b] = nil; hsh
+     => {:a=>{:b=>nil}}  # Oh, no
+
+    irb> foo = {:a => {:b => :c}}.deep_freeze
+     => {:a=>{:b=>:c}} 
+    irb> foo[:a][:b] = nil
+    RuntimeError: can't modify frozen Hash  # Oh yeah
+      from (irb):7:in `[]='
+      from (irb):7
 
 ## Installation
 
@@ -18,7 +30,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    Call .deep_freeze on Objects that aren't Classes or Modules.
 
 ## Contributing
 
